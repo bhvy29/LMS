@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="background-shapes">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="container active">
+        <div class="glass-card dashboard">
+            <header>
+                <h2>Admin Dashboard</h2>
+                <div class="header-actions">
+                    <button onclick="goHome()" class="secondary-btn">Home</button>
+                    <button onclick="logout()" class="secondary-btn">Logout</button>
+                </div>
+            </header>
+            <table id="admin-table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Issued Books</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

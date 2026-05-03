@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul class="background-shapes">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="container active">
+        <div class="glass-card">
+            <h3>Issue Book</h3>
+            <p id="issue-book-name" style="margin-bottom: 20px; text-align: center; color: #00d2ff;"></p>
+            <p class="warning-text" style="text-align: center;">Verify your password to open the PDF.</p>
+            <div class="input-container mt-1">
+                <input type="password" id="issue-password" required placeholder=" ">
+                <label>Enter your password</label>
+                <div class="input-underline"></div>
+            </div>
+            <div class="modal-actions" style="display: flex; gap: 10px; margin-top: 20px;">
+                <button onclick="goBack()" class="secondary-btn">Cancel</button>
+                <button onclick="confirmIssue()" class="primary-btn creative-btn">Confirm & Open PDF</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
